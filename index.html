@@ -15,12 +15,18 @@
             .col-lg- para dispositivos grandes (largura >= 1200px)
     -->
 
-    <header class="mt-5 pt-5">
+    <header class="mt-5">
         <div class="container-sm text-center mt-5">
             <div class="row">
-                <div class="col-sm-10">
-                    <h1>LOGOMARCA</h1>
-                    <h1>LOGOTIPO</h1>
+                <div class="col-sm-10 mb-5">
+                    <picture>
+                        <source srcset="sourceset" type="image/png+xml" />
+                        <img
+                            src="img/logomarca.png"
+                            class="img-fluid w-50 h-100"
+                            alt="image desc"
+                        />
+                    </picture>   
                 </div>
             </div>
         </div>
@@ -57,11 +63,15 @@
                     </div>
                 </div>
                 <div class="col-sm-12 text-center">
-                    <button type="button" class="btn btn-success w-100 mb-5">Entrar</button>
+
+                    <a href="inicio.html"><button type="button" class="btn btn-success w-100 mb-5">Entrar</button></a>
+
                     <button type="button" class="btn btn-secondary w-40 mb-5 mt-5">Entrar com SUAP<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square mx-2 bg-white text-dark" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
                       </svg></button>
-                    <button type="button" class="btn btn-success w-100 mt-5">Registrar</button>
+                         
+                    <button type="button" class="btn btn-success w-100 mt-5 mb-5">Registrar</button>
+                    
                 </div>
             </div>
         </form>
