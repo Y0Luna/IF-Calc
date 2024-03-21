@@ -1,0 +1,33 @@
+.position-relative {
+    position: relative;
+}
+
+.config-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+@media (min-width: 992px) {
+    .img-lg-25 {
+        width: 25% !important;
+    }
+}
+body {
+    padding-bottom: 90px; /* Altura do footer */
+}
+.form-check-inline {
+    justify-content: center;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.table-calculadora {
+    margin: auto;
+}
+@media (min-width: 992px) {
+    .table-calculadora {
+        width: 90%;
+    }
+}
