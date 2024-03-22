@@ -24,8 +24,9 @@
             <h1>Calculadora de Média</h1>
     </header>
 
-    <div class="container mt-5">
-        <div class="mb-3 d-flex justify-content-center">
+    <div class="container">
+        <hr>
+        <div class="d-flex justify-content-center">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="periodo" id="anual" value="anual">
                 <label class="form-check-label" for="anual">Anual</label>
@@ -35,29 +36,30 @@
                 <label class="form-check-label" for="semestral">Semestral</label>
             </div>
         </div>
-        <div class="row">
+        <hr>
+        <div class="row mt-5">
             <div class="col">
-                <label for="bimestre1" class="form-label ">Bimestre 1</label>
+                <label for="bimestre1" class="form-label text-center">Bimestre 1</label>
                 <input type="number" class="form-control" id="bimestre1" placeholder="Digite a nota">
                 <p class="text-center">Peso: 2</p>
             </div>
             <div class="col">
-                <label for="bimestre2" class="form-label">Bimestre 2</label>
+                <label for="bimestre2" class="form-label text-center">Bimestre 2</label>
                 <input type="number" class="form-control" id="bimestre2" placeholder="Digite a nota">
-                <p class="text-center">Peso: 2</p>
+                <p class="text-center">Peso: <span id="pesoBimestre2">2</span></p>
             </div>
             <div class="col">
-                <label for="bimestre3" class="form-label">Bimestre 3</label>
+                <label for="bimestre3" class="form-label text-center">Bimestre 3</label>
                 <input type="number" class="form-control" id="bimestre3" placeholder="Digite a nota">
                 <p class="text-center">Peso: 3</p>
             </div>
             <div class="col">
-                <label for="bimestre4" class="form-label">Bimestre 4</label>
+                <label for="bimestre4" class="form-label text-center">Bimestre 4</label>
                 <input type="number" class="form-control" id="bimestre4" placeholder="Digite a nota">
                 <p class="text-center">Peso: 3</p>
             </div>
             <div class="col">
-                <label for="provaFinal" class="form-label">Prova Final:</label>
+                <label for="provaFinal" class="form-label text-center">Prova Final:</label>
                 <input type="number" class="form-control" id="provaFinal" placeholder="Digite a nota">
             </div>
         </div>
@@ -66,13 +68,13 @@
         </div>
     </div>    
     
-    <table class="table table-light table-responsive-sm mt-4 table-striped-columns table-calculadora text-center">
+    <table class="table table-light table-responsive-sm mt-5 table-striped-columns table-calculadora text-center">
         <thead>
             <tr>
                 <th scope="col">Máximo</th>
                 <td scope="col">100</td>
                 <th>Total</th>
-                <td>XX</td>
+                <td id="mediaNota"></td>
             </tr>
         </thead>
         <tbody>
@@ -80,15 +82,15 @@
                 <th scope="row">Média</th>
                 <td scope="row">60</td>
                 <th>Restante</th>
-                <td>XX</td>
+                <td id="falta"></td>
             </tr>
         </tbody>
-    </table>
-    <table class="table table-light table-responsive-sm table-striped-columns table-calculadora text-center">
+    </table> <br>
+    <table class="table table-light table-responsive-sm  table-calculadora text-center">
         <tbody>
             <tr>
-                <th scope="row">Situação</th>
-                <td scope="col" class="text-success">Aprovado(a)</td>
+                <th scope="row">Situação:</th>
+                <td scope="col" id="situacaoAluno"></td>
             </tr>
         </tbody>
     </table>
@@ -111,6 +113,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-XXXX" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
 
