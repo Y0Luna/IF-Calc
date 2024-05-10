@@ -65,8 +65,3 @@ function calcularMedia() {
         situacaoAluno.classList.add("bg-success");
     }
 }
-
-// Associar a função de calcularMedia ao evento de clique no botão "Calcular"
-document.getElementById("calcular").addEventListener("click", calcularMedia);
-
-// Calculadora finalizada
